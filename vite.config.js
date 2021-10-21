@@ -9,5 +9,6 @@ export default defineConfig({
     target: "esnext",
     minify: "esbuild",
     brotliSize: false,
+    outDir: "docs",
   },
 });
