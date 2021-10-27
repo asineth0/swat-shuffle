@@ -1,4 +1,4 @@
-# SwatShuffle
+# Swat Shuffle
 
 Shuffle words around the screen.
 
