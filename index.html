@@ -22,33 +22,72 @@
           shadow-md
         "
       >
-        <div class="p-4 flex items-center justify-between">
-          <div class="flex items-center space-x-4">
+        <div class="p-4 flex items-center space-x-2">
+          <svg
+            class="h-8 w-8 p-2 bg-gray-800 border border-gray-700 rounded-full"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p class="font-bold">Swat Shuffle</p>
+        </div>
+        <div class="p-4 space-y-2">
+          <p class="text-sm text-gray-300">Words</p>
+          <textarea
+            id="words"
+            rows="8"
+            class="
+              bg-gray-800
+              border border-gray-700
+              rounded-sm
+              py-2
+              px-3
+              resize-none
+              w-full
+              text-sm
+              leading-relaxed
+              focus:outline-none focus:border-gray-600
+              text-gray-300
+            "
+          ></textarea>
+        </div>
+        <div class="p-4 flex items-center justify-end space-x-4">
+          <div
+            id="save"
+            class="
+              bg-primary-500
+              py-2 px-3
+              rounded-md
+              flex
+              items-center
+              space-x-2
+              hover:bg-primary-400
+              transition
+              cursor-pointer
+            "
+          >
             <svg
-              class="
-                h-8
-                w-8
-                p-2
-                bg-gray-800
-                border border-gray-700
-                rounded-full
-              "
+              class="h-5 w-5"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path
-                fill-rule="evenodd"
-                d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
-                clip-rule="evenodd"
+                d="M9.707 7.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L13 8.586V5h3a2 2 0 012 2v5a2 2 0 01-2 2H8a2 2 0 01-2-2V7a2 2 0 012-2h3v3.586L9.707 7.293zM11 3a1 1 0 112 0v2h-2V3z"
               />
+              <path d="M4 9a2 2 0 00-2 2v5a2 2 0 002 2h8a2 2 0 002-2H4V9z" />
             </svg>
-            <p class="font-bold">Swat Shuffle</p>
+            <p class="font-bold text-sm">Save</p>
           </div>
           <div
             id="start"
             class="
               bg-primary-500
-              p-2
+              py-2 px-3
               rounded-md
               flex
               items-center
@@ -67,26 +106,6 @@
             </svg>
             <p class="font-bold text-sm">Start</p>
           </div>
-        </div>
-        <div class="p-4 space-y-2">
-          <p class="text-sm">Words</p>
-          <textarea
-            id="words"
-            rows="8"
-            class="
-              bg-gray-800
-              border border-gray-700
-              rounded-sm
-              py-2
-              px-3
-              resize-none
-              w-full
-              text-sm
-              leading-relaxed
-              text-gray-300
-              focus:outline-none focus:border-gray-600
-            "
-          ></textarea>
         </div>
       </div>
       <p class="text-sm text-gray-300">

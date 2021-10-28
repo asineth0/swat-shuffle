@@ -4,56 +4,9 @@ const startEl = document.querySelector<HTMLDivElement>("#start")!;
 const wordsEl = document.querySelector<HTMLTextAreaElement>("#words")!;
 const configEl = document.querySelector<HTMLDivElement>("#config")!;
 const displayEl = document.querySelector<HTMLDivElement>("#display")!;
+const saveEl = document.querySelector<HTMLDivElement>("#save")!;
 
-wordsEl.value = `le baladeur
-une bande dessinée (une BD)
-chanter
-le chocolat
-un dessin
-dessiner
-dormir
-l'école
-écouter
-écouter de la musique
-envoyer un e-mail
-étudier
-lire
-les frites
-la glace
-un journal
-un magazine
-manger
-les mathématiques/les maths
-la musique classique
-la musique moderne
-parler
-anglais
-français
-regarder
-la radio
-regarder la télévision
-un roman
-un texto/ un SMS
-surfer sur Internet
-téléphoner
-téléphoner à des amis
-travailler
-les vacances
-une voiture
-la voiture de sport
-Tu aimes...?
-aimer
-Qu'est-ce que tu aimes faire?
-Oui, j'aime
-j'adore
-Non, je déteste
-je n'aime pas
-un crayon de couleur
-un crayon
-aimer
-faire
-j'aime bien
-j'aime mieux/je préfère`;
+wordsEl.value = localStorage.getItem("words") || "";
 
 const update = () => {
   configEl.classList.add("hidden");
@@ -115,6 +68,10 @@ startEl.addEventListener("click", () => {
       update();
     }
   });
+});
+
+saveEl.addEventListener("click", () => {
+  localStorage.setItem("words", wordsEl.value);
 });
 
 let i = 0;
