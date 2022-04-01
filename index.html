@@ -6,25 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swat Shuffle</title>
   </head>
-  <body class="bg-gray-800 text-white">
+  <body class="">
     <div
       id="config"
       class="h-screen flex flex-col items-center justify-center space-y-4"
     >
       <div
-        class="
-          bg-gray-900
-          border border-gray-700
-          rounded-md
-          divide-y divide-gray-700
-          max-w-sm
-          w-full
-          shadow-md
-        "
+        class="bg-gray-50 border border-gray-100 rounded-md divide-y divide-gray-200 max-w-sm w-full shadow-md"
       >
         <div class="p-4 flex items-center space-x-2">
           <svg
-            class="h-8 w-8 p-2 bg-gray-800 border border-gray-700 rounded-full"
+            class="h-8 w-8 p-2 bg-gray-100 border border-gray-200 rounded-full"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -37,45 +29,19 @@
           <p class="font-bold">Swat Shuffle</p>
         </div>
         <div class="p-4 space-y-2">
-          <p class="text-sm text-gray-300">Words</p>
+          <p class="text-sm text-gray-400">Words/Phrases</p>
           <textarea
             id="words"
             rows="8"
-            class="
-              bg-gray-800
-              border border-gray-700
-              rounded-sm
-              py-2
-              px-3
-              resize-none
-              w-full
-              text-sm
-              leading-relaxed
-              focus:outline-none focus:border-gray-600
-              text-gray-300
-            "
+            class="bg-gray-white border border-gray-200 rounded-sm py-2 px-3 resize-none w-full text-sm leading-relaxed focus:outline-none focus:border-gray-300 text-gray-400"
           ></textarea>
         </div>
-        <div class="p-4 flex items-center justify-end space-x-4">
+        <div class="p-4 flex items-center justify-end space-x-4 text-white">
           <div
             id="save"
-            class="
-              bg-primary-500
-              py-2 px-3
-              rounded-md
-              flex
-              items-center
-              space-x-2
-              hover:bg-primary-400
-              transition
-              cursor-pointer
-            "
+            class="bg-primary-500 py-2 px-3 rounded-md flex items-center space-x-2 hover:bg-primary-400 transition cursor-pointer"
           >
-            <svg
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path
                 d="M9.707 7.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L13 8.586V5h3a2 2 0 012 2v5a2 2 0 01-2 2H8a2 2 0 01-2-2V7a2 2 0 012-2h3v3.586L9.707 7.293zM11 3a1 1 0 112 0v2h-2V3z"
               />
@@ -85,17 +51,7 @@
           </div>
           <div
             id="start"
-            class="
-              bg-primary-500
-              py-2 px-3
-              rounded-md
-              flex
-              items-center
-              space-x-2
-              hover:bg-primary-400
-              transition
-              cursor-pointer
-            "
+            class="bg-primary-500 py-2 px-3 rounded-md flex items-center space-x-2 hover:bg-primary-400 transition cursor-pointer"
           >
             <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path

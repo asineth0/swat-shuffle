@@ -33,9 +33,9 @@ const update = () => {
       "flex",
       "items-center",
       "justify-center",
-      "bg-gray-900",
+      "bg-gray-50",
       "border",
-      "border-gray-700",
+      "border-gray-100",
       "rounded-md"
     );
     const wordTextEl = document.createElement("p");
